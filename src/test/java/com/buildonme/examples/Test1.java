@@ -5,4 +5,7 @@ package com.buildonme.examples;
  * Modified by alex
  */
 public class Test1 {
+    public static void main(String[] args) {
+
+    }
 }
