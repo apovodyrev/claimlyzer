@@ -4,7 +4,6 @@ package com.buildonme.examples;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import org.apache.log4j.Logger;
 import org.bson.Document;
 
 import java.util.ArrayList;
@@ -16,7 +15,7 @@ import java.util.Set;
  * Created by Alex on 6/5/17
  */
 public class Example1 {
-    private static Logger log = Logger.getLogger(Example1.class);
+//    private static Logger log = Logger.getLogger(Example1.class);
 
     public static void main(String [] args){
 

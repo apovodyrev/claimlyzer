@@ -6,7 +6,6 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Accumulators;
 import com.mongodb.client.model.Aggregates;
 import com.mongodb.client.model.Filters;
-import org.apache.log4j.Logger;
 import org.bson.Document;
 
 import java.util.ArrayList;
@@ -17,7 +16,7 @@ import java.util.List;
  * Created by Alex on 6/6/17
  */
 public class Example2 {
-    private static Logger log = Logger.getLogger(Example2.class);
+//    private static Logger log = Logger.getLogger(Example2.class);
 
     public static void main(String [] args){
 
@@ -36,7 +35,7 @@ public class Example2 {
         ).into(new ArrayList<Document>());
 
         for(Document d:boroughs){
-            log.info(d);
+            System.out.println(d);
         }
 
 
@@ -46,7 +45,7 @@ public class Example2 {
                 new Document("borough", "Bronx").append("cuisine", "Bakery") //Filter Bakeries in bronx
         ).into(new ArrayList<Document>());
 
-        log.info(restaurants.size());
+        System.out.println(restaurants.size());
 
     }
 }
