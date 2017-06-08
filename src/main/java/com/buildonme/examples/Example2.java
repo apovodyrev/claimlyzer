@@ -11,6 +11,7 @@ import org.bson.Document;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created by Alex on 6/6/17
@@ -25,6 +26,24 @@ public class Example2 {
         MongoClient mongoClient = new MongoClient();
         MongoDatabase database = mongoClient.getDatabase("test");
         MongoCollection<Document> collection = database.getCollection("restaurants");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
