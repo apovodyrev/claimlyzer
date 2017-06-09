@@ -16,10 +16,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Alex on 6/9/17.
+ * Created by Alex on 6/9/17
  */
 public class TestFilters {
     private static Logger log = Logger.getLogger(TestFilters.class);
+
+    public static void printCollectionList( List<Document> collectionList){
+        for (Document d : collectionList)
+            printDoc(d);
+
+    }
+
+    public static void printDoc(Document d){
+
+        for (Object o : d.values()){
+            log.info(o);
+
+        }
+        log.info("\n");
+
+    }
 
     public static void main(String [] args) {
 
@@ -47,17 +63,7 @@ public class TestFilters {
         log.info("Count: " + String.valueOf(collectionList.size()) + "\n");
 
         //List
-        for (Document d : collectionList){
-
-            for (Object o : d.values()){
-                log.info(o);
-            }
-            log.info("\n");
-
-
-
-
-        }
+        printCollectionList(collectionList);
 
 
 
